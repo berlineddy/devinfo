@@ -1,0 +1,13 @@
+[package]
+name = "smartdecode"
+version = "0.1.0"
+authors = ["Eddy Stefes <eduard.stefes@gmail.com>"]
+
+[[bin]]
+doc = false
+name = "foo"
+path = "src/main.rs"
+
+[dependencies]
+libc = "*"
+byteorder="*"
