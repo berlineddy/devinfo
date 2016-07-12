@@ -98,6 +98,7 @@ impl<'a> Device<'a> {
                 0xC4 => SmartValueType::ReallocatedEventCount(SmartValue::new_data(attibute)),
                 0xF1 => SmartValueType::TotalLBAWritten(SmartValue::new_data(attibute)),
                 0xF2 => SmartValueType::TotalLBARead(SmartValue::new_data(attibute)),
+                0xA3 => SmartValueType::InitialBadBlocks(SmartValue::new_data(attibute)),
                 _ => SmartValueType::Unimplemented(attibute[0]),
             };
             values.push(a);

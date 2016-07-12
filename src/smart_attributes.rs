@@ -21,6 +21,8 @@ pub enum SmartValueType {
     TotalLBAWritten(SmartValue),
     /// Holds how many LBA Sectors where read during total lifetime
     TotalLBARead(SmartValue),
+    ///
+    InitialBadBlocks(SmartValue),
     /// every other value
     Unimplemented(u8),
 }
